@@ -8,6 +8,7 @@
             html, body {
                 height: 100%;
             }
+
 			body {
 				background: url('dark.png') #444;
 				margin: 0px;
@@ -52,12 +53,14 @@
 
             .section {
                 position: relative;
+                margin: 0px 0px 80px 0px;
             }
 
             .left {
-                margin-right: 40%;
+                position: absolute;
                 text-align: right;
-                color: #333;
+                top: 0px;
+                width: 60%;
             }
 
             .left p, .left h2 {
@@ -65,10 +68,8 @@
             }
 
             .right {
-                position: absolute;
-                top: 0px;
                 width: 40%;
-                right: 0px;
+                margin-left: 60%;
                 color: #ddd;
             }
 
@@ -85,14 +86,31 @@
 	<body>
 		<div class="divider"></div>
         <div class="fade"></div>
-
+        
         <div class="section">
             <div class="left">
                 <h2>Hvad Sara skriver</h2>
-                <p>"Der nr 4 skift har v&aeligret undervejs hele dagen"</p>
             </div>
             <div class="right">
                 <h2>Hvad Sara (m&aring;ske) mener</h2>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="left">
+                <p>"Der nr 4 skift har v&aeligret undervejs hele dagen"</p>
+            </div>
+            <div class="right">
+                <p><small>Mick:</small>Jeg l&aeligste det f&oslash;rst som om at tog nr 4 var forsinket.</p>
+                <p><small>Henrik:</small>At hun har skiftet transportmiddel 4 gange i l&oslash;bet af dagen.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="left">
+                <p>"Der nr 4 skift har v&aeligret undervejs hele dagen"</p>
+            </div>
+            <div class="right">
                 <p><small>Mick:</small>Jeg l&aeligste det f&oslash;rst som om at tog nr 4 var forsinket.</p>
                 <p><small>Henrik:</small>At hun har skiftet transportmiddel 4 gange i l&oslash;bet af dagen.</p>
             </div>

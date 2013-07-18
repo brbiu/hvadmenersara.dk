@@ -1,41 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hvad mener Sara?</title>
-        <!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">-->
-        
-        <style type="css/text">
-            body {
-                background: url('http://subtlepatterns.com/patterns/fabric_of_squares_gray.png');
-                margin: 0px;
-                font-family: Georgia, Times New Roman;
+	<head>
+		<title>Hvad mener Sara?</title>
+		<!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">-->
+		
+    	<style type="text/css">
+            html, body {
+                height: 100%;
             }
-            
-            .container {
-                position: relative;
-                margin: 0px 10%
-            }
-            
-            .original {
+			body {
+				background: url('dark.png') #444;
+				margin: 0px;
+				font-family: Garamond, Georgia, "Times New Roman";
+                font-size: 16px;
+			}
+			
+			.divider {
+                z-index: -1;
+                background: url('light.png');
                 position: fixed;
                 width: 60%;
                 height: 100%;
-                background: #aaa;
+
+                -moz-box-shadow: 0px 0px 15px 5px #333;
+                -webkit-box-shadow: 0px 0px 15px 5px #333;
+                box-shadow: 0px 0px 15px 5px #333;
             }
-            
-            .interpretation {
+
+            .fade {
+                z-index: -1;
                 position: fixed;
-                width: 40%;
-                height: 100%;
-                background: #ddd;
+                width: 200%;
+                height: 200%;
+                left: 60%;
+
+                -moz-box-shadow: 0px 0px 50px 5px #bbb;
+                -webkit-box-shadow: 0px 0px 50px 5px #bbb;
+                box-shadow: 0px 0px 50px 5px #bbb;
             }
-        </style>
-    </head>
-    
-    <body>
-        <div class="container">
-            <div class="original"></div>
-            <div class="interpretation"></div>
+
+            p {
+                padding: 0em 40px 1.5em 40px;
+                line-height: 1.5em;
+                margin: 0px;
+            }
+
+            h2 {
+                padding: 60px 40px 1.5em 40px;
+                margin: 0px;
+            }
+
+            .section {
+                position: relative;
+            }
+
+            .left {
+                margin-right: 40%;
+                text-align: right;
+                color: #333;
+            }
+
+            .left p, .left h2 {
+                font-style: italic;
+            }
+
+            .right {
+                position: absolute;
+                top: 0px;
+                width: 40%;
+                right: 0px;
+                color: #ddd;
+            }
+
+            small {
+                background: #333;
+                border-radius: 3px;
+                padding: 2px 3px;
+                margin: 0px 4px 0px 0px;
+            }
+
+		</style>
+	</head>
+	
+	<body>
+		<div class="divider"></div>
+        <div class="fade"></div>
+
+        <div class="section">
+            <div class="left">
+                <h2>Hvad Sara skriver</h2>
+                <p>"Der nr 4 skift har v&aeligret undervejs hele dagen"</p>
+            </div>
+            <div class="right">
+                <h2>Hvad Sara (m&aring;ske) mener</h2>
+                <p><small>Mick:</small>Jeg l&aeligste det f&oslash;rst som om at tog nr 4 var forsinket.</p>
+                <p><small>Henrik:</small>At hun har skiftet transportmiddel 4 gange i l&oslash;bet af dagen.</p>
+            </div>
         </div>
-    </body>
+
+
+	</body>
 </html>
